@@ -1,0 +1,58 @@
+.ami-block-bg {
+    background: #eae5e4;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ami-block-bg img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.ami-block-bg .ami-block-bg-overlay {
+    background-color: transparent;
+    background-image: linear-gradient(0deg, #1a1a1a 0%, rgba(26, 26, 26, 1) 10%, rgba(26, 26, 26, .79) 30%, transparent 100%);
+    opacity: .9;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: background .3s, border-radius .3s, opacity .3s;
+}
+
+.ami-block-bg .ami-block-bg-overlay .ami-bg-name {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-left: 4px solid var(--colorPrimary);
+    padding-left: 5px;
+}
+
+.ami-4 .owl-stage-outer {
+    background: transparent;
+}
+
+@media only screen and (min-width: 992px) {
+    .ami-block-bg .ami-block-bg-overlay {
+        height: 15vw;
+    }
+    .ami-block-bg .ami-block-bg-overlay .ami-bg-name {
+        font-size: 1vw;
+        letter-spacing: .1vw;
+        padding-left: .5vw;
+    }
+}
+
+.ami-4 .owl-item img {
+    width: auto;
+}
